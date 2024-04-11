@@ -22,11 +22,11 @@ public class UserRegistrationTest extends BaseTest {
     }
     @Step("Set valid user data in the fields in the registration form")
     public void setUserDataInRegForm() {
-        objUserRegistration.setUserData(new UserData("kadabra@yandex.ru", "magical", "Fiona"));
+        objUserRegistration.setUserData(new UserData("magenta@yandex.ru", "yellow", "Alex"));
     }
     @Step("Set user data and invalid password in the fields in the registration form")
     public void setUserDataAndInvalidPasswordInRegForm() {
-        objUserRegistration.setUserData(new UserData("kadabra@yandex.ru", "magic", "Fiona"));
+        objUserRegistration.setUserData(new UserData("magenta@yandex.ru", "yell", "Alex"));
     }
     @Step("Click 'Sign up' button")
     public void clickSignUpButton() {

@@ -13,7 +13,7 @@ public class LoginTest extends BaseTest {
     public void setUpAndCreateUser() {
         RestAssured.baseURI = "https://stellarburgers.nomoreparties.site";
         userClient = new UserClient();
-        userClient.create(new UserData("kadabra@yandex.ru", "magical", "Fiona"));
+        userClient.create(new UserData("magenta@yandex.ru", "yellow", "Alex"));
         objLogin = new Login(driver);
     }
     @Step("Click on the 'Log in to account' button")
@@ -34,7 +34,7 @@ public class LoginTest extends BaseTest {
     }
     @Step("Set user data in the fields in the authorization form")
     public void setUserDataInAuthForm() {
-        objLogin.setUserData(new UserData("kadabra@yandex.ru", "magical", ""));
+        objLogin.setUserData(new UserData("magenta@yandex.ru", "yellow", ""));
     }
     @Step("Click on the 'Log in' button")
     public void clickLogInButton() {

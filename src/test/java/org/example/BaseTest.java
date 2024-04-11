@@ -22,7 +22,7 @@ public class BaseTest {
         driver = getDriver(browser == null ? "chrome" : browser);
         driver.get(URL_STELLAR_BURGERS);
         userClient = new UserClient();
-        userData = new UserData("kadabra@yandex.ru", "magical", "Fiona");
+        userData = new UserData("magenta@yandex.ru", "yellow", "Alex");
     }
 
     @After
