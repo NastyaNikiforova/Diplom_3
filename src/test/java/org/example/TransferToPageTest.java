@@ -11,7 +11,7 @@ public class TransferToPageTest extends BaseTest {
     private UserClient userClient;
 
     @Before
-    public void createAndLoginUser() {
+    public void createUser() {
         RestAssured.baseURI = "https://stellarburgers.nomoreparties.site";
         userClient = new UserClient();
         userClient.create(new UserData("magenta@yandex.ru", "yellow", "Alex"));
